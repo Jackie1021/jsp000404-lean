@@ -1,6 +1,6 @@
 name = "jsp000404_research"
 version = "0.1.0"
-defaultTargets = ["Problem", "Reduction", "Regression", "FourCenterDefs", "FourCenterExclusions", "FourCenterCapacity", "FourCenterWeights", "FourCenterBound", "FourCenterWitness", "CompletionContract"]
+defaultTargets = ["Problem", "Reduction", "Regression", "FourCenterDefs", "FourCenterExclusions", "FourCenterCapacity", "FourCenterWeights", "FourCenterBound", "FourCenterWitness", "CompletionContract", "GlobalDirections", "FiniteReductionCounterexample"]
 
 [[require]]
 name = "mathlib"
@@ -36,3 +36,9 @@ name = "FourCenterWitness"
 
 [[lean_lib]]
 name = "CompletionContract"
+
+[[lean_lib]]
+name = "GlobalDirections"
+
+[[lean_lib]]
+name = "FiniteReductionCounterexample"

@@ -1,0 +1,702 @@
+JSP404.FourCenter.sortedGaps_order_012 : ∀ (a b c t : ℝ),
+  a ≤ b → b ≤ c → JSP404.FourCenter.sortedGaps a b c t = (b - a, c - b, t + a - c)
+'JSP404.FourCenter.sortedGaps_order_012' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.sortedGaps_order_021 : ∀ (a b c t : ℝ),
+  a ≤ c → c ≤ b → JSP404.FourCenter.sortedGaps a b c t = (c - a, b - c, t + a - b)
+'JSP404.FourCenter.sortedGaps_order_021' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.sortedGaps_order_102 : ∀ (a b c t : ℝ),
+  b ≤ a → a ≤ c → JSP404.FourCenter.sortedGaps a b c t = (a - b, c - a, t + b - c)
+'JSP404.FourCenter.sortedGaps_order_102' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.sortedGaps_order_120 : ∀ (a b c t : ℝ),
+  b ≤ c → c ≤ a → JSP404.FourCenter.sortedGaps a b c t = (c - b, a - c, t + b - a)
+'JSP404.FourCenter.sortedGaps_order_120' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.sortedGaps_order_201 : ∀ (a b c t : ℝ),
+  c ≤ a → a ≤ b → JSP404.FourCenter.sortedGaps a b c t = (a - c, b - a, t + c - b)
+'JSP404.FourCenter.sortedGaps_order_201' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.sortedGaps_order_210 : ∀ (a b c t : ℝ),
+  c ≤ b → b ≤ a → JSP404.FourCenter.sortedGaps a b c t = (b - c, a - b, t + c - a)
+'JSP404.FourCenter.sortedGaps_order_210' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_two_high_01 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) → False
+'JSP404.FourCenter.lower_no_two_high_01' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_two_high_02 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) → False
+'JSP404.FourCenter.lower_no_two_high_02' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_two_high_03 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) → False
+'JSP404.FourCenter.lower_no_two_high_03' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_two_high_12 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) → False
+'JSP404.FourCenter.lower_no_two_high_12' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_two_high_13 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) → False
+'JSP404.FourCenter.lower_no_two_high_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_two_high_23 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) → False
+'JSP404.FourCenter.lower_no_two_high_23' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_high_middle_middle_012 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                              JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                                JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) → False
+'JSP404.FourCenter.lower_no_high_middle_middle_012' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_high_middle_middle_013 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                              JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                                JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) → False
+'JSP404.FourCenter.lower_no_high_middle_middle_013' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_high_middle_middle_023 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                              JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) →
+                                JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) → False
+'JSP404.FourCenter.lower_no_high_middle_middle_023' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_high_middle_middle_102 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                              JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                                JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) → False
+'JSP404.FourCenter.lower_no_high_middle_middle_102' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_high_middle_middle_103 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                              JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                                JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) → False
+'JSP404.FourCenter.lower_no_high_middle_middle_103' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_high_middle_middle_123 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                              JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) →
+                                JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) → False
+'JSP404.FourCenter.lower_no_high_middle_middle_123' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_high_middle_middle_201 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) →
+                              JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                                JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) → False
+'JSP404.FourCenter.lower_no_high_middle_middle_201' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_high_middle_middle_203 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) →
+                              JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                                JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) → False
+'JSP404.FourCenter.lower_no_high_middle_middle_203' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_high_middle_middle_213 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) →
+                              JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                                JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) → False
+'JSP404.FourCenter.lower_no_high_middle_middle_213' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_high_middle_middle_301 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) →
+                              JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                                JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) → False
+'JSP404.FourCenter.lower_no_high_middle_middle_301' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_high_middle_middle_302 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) →
+                              JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                                JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) → False
+'JSP404.FourCenter.lower_no_high_middle_middle_302' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.lower_no_high_middle_middle_312 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        0 ≤ d01 ∧ d01 < t →
+          0 ≤ d02 ∧ d02 < t →
+            0 ≤ d03 ∧ d03 < t →
+              0 ≤ d12 ∧ d12 < t →
+                0 ≤ d13 ∧ d13 < t →
+                  0 ≤ d23 ∧ d23 < t →
+                    JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                      JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                        JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                          JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                            JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) →
+                              JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                                JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) → False
+'JSP404.FourCenter.lower_no_high_middle_middle_312' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.upper_no_high_high_middle_012 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 →
+        n + 1 / 2 ≤ t →
+          0 ≤ d01 ∧ d01 < t →
+            0 ≤ d02 ∧ d02 < t →
+              0 ≤ d03 ∧ d03 < t →
+                0 ≤ d12 ∧ d12 < t →
+                  0 ≤ d13 ∧ d13 < t →
+                    0 ≤ d23 ∧ d23 < t →
+                      JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                        JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                          JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                            JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                                JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                                  JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) → False
+'JSP404.FourCenter.upper_no_high_high_middle_012' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.upper_no_high_high_middle_013 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 →
+        n + 1 / 2 ≤ t →
+          0 ≤ d01 ∧ d01 < t →
+            0 ≤ d02 ∧ d02 < t →
+              0 ≤ d03 ∧ d03 < t →
+                0 ≤ d12 ∧ d12 < t →
+                  0 ≤ d13 ∧ d13 < t →
+                    0 ≤ d23 ∧ d23 < t →
+                      JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                        JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                          JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                            JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                                JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                                  JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) → False
+'JSP404.FourCenter.upper_no_high_high_middle_013' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.upper_no_high_high_middle_021 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 →
+        n + 1 / 2 ≤ t →
+          0 ≤ d01 ∧ d01 < t →
+            0 ≤ d02 ∧ d02 < t →
+              0 ≤ d03 ∧ d03 < t →
+                0 ≤ d12 ∧ d12 < t →
+                  0 ≤ d13 ∧ d13 < t →
+                    0 ≤ d23 ∧ d23 < t →
+                      JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                        JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                          JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                            JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                                JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) →
+                                  JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) → False
+'JSP404.FourCenter.upper_no_high_high_middle_021' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.upper_no_high_high_middle_023 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 →
+        n + 1 / 2 ≤ t →
+          0 ≤ d01 ∧ d01 < t →
+            0 ≤ d02 ∧ d02 < t →
+              0 ≤ d03 ∧ d03 < t →
+                0 ≤ d12 ∧ d12 < t →
+                  0 ≤ d13 ∧ d13 < t →
+                    0 ≤ d23 ∧ d23 < t →
+                      JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                        JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                          JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                            JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                                JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) →
+                                  JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) → False
+'JSP404.FourCenter.upper_no_high_high_middle_023' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.upper_no_high_high_middle_031 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 →
+        n + 1 / 2 ≤ t →
+          0 ≤ d01 ∧ d01 < t →
+            0 ≤ d02 ∧ d02 < t →
+              0 ≤ d03 ∧ d03 < t →
+                0 ≤ d12 ∧ d12 < t →
+                  0 ≤ d13 ∧ d13 < t →
+                    0 ≤ d23 ∧ d23 < t →
+                      JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                        JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                          JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                            JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                                JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) →
+                                  JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) → False
+'JSP404.FourCenter.upper_no_high_high_middle_031' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.upper_no_high_high_middle_032 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 →
+        n + 1 / 2 ≤ t →
+          0 ≤ d01 ∧ d01 < t →
+            0 ≤ d02 ∧ d02 < t →
+              0 ≤ d03 ∧ d03 < t →
+                0 ≤ d12 ∧ d12 < t →
+                  0 ≤ d13 ∧ d13 < t →
+                    0 ≤ d23 ∧ d23 < t →
+                      JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                        JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                          JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                            JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) →
+                                JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) →
+                                  JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) → False
+'JSP404.FourCenter.upper_no_high_high_middle_032' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.upper_no_high_high_middle_120 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 →
+        n + 1 / 2 ≤ t →
+          0 ≤ d01 ∧ d01 < t →
+            0 ≤ d02 ∧ d02 < t →
+              0 ≤ d03 ∧ d03 < t →
+                0 ≤ d12 ∧ d12 < t →
+                  0 ≤ d13 ∧ d13 < t →
+                    0 ≤ d23 ∧ d23 < t →
+                      JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                        JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                          JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                            JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                                JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) →
+                                  JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) → False
+'JSP404.FourCenter.upper_no_high_high_middle_120' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.upper_no_high_high_middle_123 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 →
+        n + 1 / 2 ≤ t →
+          0 ≤ d01 ∧ d01 < t →
+            0 ≤ d02 ∧ d02 < t →
+              0 ≤ d03 ∧ d03 < t →
+                0 ≤ d12 ∧ d12 < t →
+                  0 ≤ d13 ∧ d13 < t →
+                    0 ≤ d23 ∧ d23 < t →
+                      JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                        JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                          JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                            JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                                JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) →
+                                  JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) → False
+'JSP404.FourCenter.upper_no_high_high_middle_123' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.upper_no_high_high_middle_130 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 →
+        n + 1 / 2 ≤ t →
+          0 ≤ d01 ∧ d01 < t →
+            0 ≤ d02 ∧ d02 < t →
+              0 ≤ d03 ∧ d03 < t →
+                0 ≤ d12 ∧ d12 < t →
+                  0 ≤ d13 ∧ d13 < t →
+                    0 ≤ d23 ∧ d23 < t →
+                      JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                        JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                          JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                            JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                                JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) →
+                                  JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) → False
+'JSP404.FourCenter.upper_no_high_high_middle_130' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.upper_no_high_high_middle_132 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 →
+        n + 1 / 2 ≤ t →
+          0 ≤ d01 ∧ d01 < t →
+            0 ≤ d02 ∧ d02 < t →
+              0 ≤ d03 ∧ d03 < t →
+                0 ≤ d12 ∧ d12 < t →
+                  0 ≤ d13 ∧ d13 < t →
+                    0 ≤ d23 ∧ d23 < t →
+                      JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                        JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                          JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                            JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) →
+                                JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) →
+                                  JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) → False
+'JSP404.FourCenter.upper_no_high_high_middle_132' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.upper_no_high_high_middle_230 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 →
+        n + 1 / 2 ≤ t →
+          0 ≤ d01 ∧ d01 < t →
+            0 ≤ d02 ∧ d02 < t →
+              0 ≤ d03 ∧ d03 < t →
+                0 ≤ d12 ∧ d12 < t →
+                  0 ≤ d13 ∧ d13 < t →
+                    0 ≤ d23 ∧ d23 < t →
+                      JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                        JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                          JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                            JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) →
+                                JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) →
+                                  JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d02 d03 t) → False
+'JSP404.FourCenter.upper_no_high_high_middle_230' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.upper_no_high_high_middle_231 : ∀ (n t d01 d02 d03 d12 d13 d23 : ℝ),
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 →
+        n + 1 / 2 ≤ t →
+          0 ≤ d01 ∧ d01 < t →
+            0 ≤ d02 ∧ d02 < t →
+              0 ≤ d03 ∧ d03 < t →
+                0 ≤ d12 ∧ d12 < t →
+                  0 ≤ d13 ∧ d13 < t →
+                    0 ≤ d23 ∧ d23 < t →
+                      JSP404.FourCenter.TripleCap d01 d02 d12 t →
+                        JSP404.FourCenter.TripleCap d01 d03 d13 t →
+                          JSP404.FourCenter.TripleCap d02 d03 d23 t →
+                            JSP404.FourCenter.TripleCap d12 d13 d23 t →
+                              JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d02 d12 d23 t) →
+                                JSP404.FourCenter.High n (JSP404.FourCenter.sortedGaps d03 d13 d23 t) →
+                                  JSP404.FourCenter.Middle n (JSP404.FourCenter.sortedGaps d01 d12 d13 t) → False
+'JSP404.FourCenter.upper_no_high_high_middle_231' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.sortedGaps_sum : ∀ (a b c t : ℝ),
+  (JSP404.FourCenter.sortedGaps a b c t).1 + (JSP404.FourCenter.sortedGaps a b c t).2.1 +
+      (JSP404.FourCenter.sortedGaps a b c t).2.2 =
+    t
+'JSP404.FourCenter.sortedGaps_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@JSP404.FourCenter.DirectionModel.gaps_sum : ∀ {t : ℝ} (M : JSP404.FourCenter.DirectionModel t) (i : Fin 4),
+  (M.gaps i).1 + (M.gaps i).2.1 + (M.gaps i).2.2 = t
+'JSP404.FourCenter.DirectionModel.gaps_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@JSP404.FourCenter.CapacityData.floor_budget : ∀ {g : ℝ × ℝ × ℝ} {t : ℝ} {n : ℕ} (C : JSP404.FourCenter.CapacityData g),
+  g.1 + g.2.1 + g.2.2 = t → t < ↑n + 1 → C.a + C.b + C.c ≤ n
+'JSP404.FourCenter.CapacityData.floor_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+@JSP404.FourCenter.CapacityData.exponent_le : ∀ {g : ℝ × ℝ × ℝ} {n : ℕ} (C : JSP404.FourCenter.CapacityData g),
+  1 ≤ n → C.a + C.b + C.c ≤ n → C.exponent ≤ n - 1
+'JSP404.FourCenter.CapacityData.exponent_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@JSP404.FourCenter.CapacityData.high_of_exponent : ∀ {g : ℝ × ℝ × ℝ} {n : ℕ} (C : JSP404.FourCenter.CapacityData g),
+  3 ≤ n → C.a + C.b + C.c ≤ n → C.exponent = n - 1 → JSP404.FourCenter.High (↑n) g
+'JSP404.FourCenter.CapacityData.high_of_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+@JSP404.FourCenter.CapacityData.middle_of_exponent : ∀ {g : ℝ × ℝ × ℝ} {n : ℕ} (C : JSP404.FourCenter.CapacityData g),
+  3 ≤ n → C.a + C.b + C.c ≤ n → n - 2 ≤ C.exponent → JSP404.FourCenter.Middle (↑n) g
+'JSP404.FourCenter.CapacityData.middle_of_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+@JSP404.FourCenter.no_two_high_lower : ∀ {n t : ℝ},
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        ∀ (M : JSP404.FourCenter.DirectionModel t) (i j : Fin 4),
+          i ≠ j → JSP404.FourCenter.High n (M.gaps i) → JSP404.FourCenter.High n (M.gaps j) → False
+'JSP404.FourCenter.no_two_high_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+@JSP404.FourCenter.no_high_two_middle_lower : ∀ {n t : ℝ},
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 / 2 →
+        ∀ (M : JSP404.FourCenter.DirectionModel t) (i j k : Fin 4),
+          i ≠ j →
+            i ≠ k →
+              j ≠ k →
+                JSP404.FourCenter.High n (M.gaps i) →
+                  JSP404.FourCenter.Middle n (M.gaps j) → JSP404.FourCenter.Middle n (M.gaps k) → False
+'JSP404.FourCenter.no_high_two_middle_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+@JSP404.FourCenter.no_two_high_middle_upper : ∀ {n t : ℝ},
+  3 ≤ n →
+    n ≤ t →
+      t < n + 1 →
+        n + 1 / 2 ≤ t →
+          ∀ (M : JSP404.FourCenter.DirectionModel t) (i j k : Fin 4),
+            i ≠ j →
+              i ≠ k →
+                j ≠ k →
+                  JSP404.FourCenter.High n (M.gaps i) →
+                    JSP404.FourCenter.High n (M.gaps j) → JSP404.FourCenter.Middle n (M.gaps k) → False
+'JSP404.FourCenter.no_two_high_middle_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.four_sum_le_one_profile : ∀ (k : Fin 4 → ℕ) (i : Fin 4) (a b : ℕ),
+  k i ≤ a → (∀ (j : Fin 4), j ≠ i → k j ≤ b) → ∑ j, 2 ^ k j ≤ 2 ^ a + 3 * 2 ^ b
+'JSP404.FourCenter.four_sum_le_one_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.four_sum_le_two_profile : ∀ (k : Fin 4 → ℕ) (i j : Fin 4) (a b c : ℕ),
+  i ≠ j → k i ≤ a → k j ≤ b → (∀ (l : Fin 4), l ≠ i → l ≠ j → k l ≤ c) → ∑ l, 2 ^ k l ≤ 2 ^ a + 2 ^ b + 2 * 2 ^ c
+'JSP404.FourCenter.four_sum_le_two_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.four_weight_lower : ∀ (n : ℕ),
+  3 ≤ n →
+    ∀ (k : Fin 4 → ℕ),
+      (∀ (i : Fin 4), k i ≤ n - 1) →
+        (∀ (i j : Fin 4), i ≠ j → k i = n - 1 → k j = n - 1 → False) →
+          (∀ (i j l : Fin 4), i ≠ j → i ≠ l → j ≠ l → k i = n - 1 → n - 2 ≤ k j → n - 2 ≤ k l → False) →
+            ∑ i, 2 ^ k i ≤ 2 ^ n
+'JSP404.FourCenter.four_weight_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.four_weight_upper : ∀ (n : ℕ),
+  3 ≤ n →
+    ∀ (k : Fin 4 → ℕ),
+      (∀ (i : Fin 4), k i ≤ n - 1) →
+        (∀ (i j l : Fin 4), i ≠ j → i ≠ l → j ≠ l → k i = n - 1 → k j = n - 1 → n - 2 ≤ k l → False) →
+          ∑ i, 2 ^ k i ≤ 2 ^ n + 2 ^ (n - 2)
+'JSP404.FourCenter.four_weight_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.capacity_bound_lower : ∀ (n : ℕ),
+  3 ≤ n →
+    ∀ (t : ℝ),
+      ↑n ≤ t →
+        t < ↑n + 1 / 2 →
+          ∀ (M : JSP404.FourCenter.DirectionModel t) (C : (i : Fin 4) → JSP404.FourCenter.CapacityData (M.gaps i)),
+            ∑ i, 2 ^ (C i).exponent ≤ 2 ^ n
+'JSP404.FourCenter.capacity_bound_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.capacity_bound_upper : ∀ (n : ℕ),
+  3 ≤ n →
+    ∀ (t : ℝ),
+      ↑n ≤ t →
+        t < ↑n + 1 →
+          ↑n + 1 / 2 ≤ t →
+            ∀ (M : JSP404.FourCenter.DirectionModel t) (C : (i : Fin 4) → JSP404.FourCenter.CapacityData (M.gaps i)),
+              ∑ i, 2 ^ (C i).exponent ≤ 2 ^ n + 2 ^ (n - 2)
+'JSP404.FourCenter.capacity_bound_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.witness_weight_ten : ∑ i, 2 ^ (JSP404.FourCenter.witnessCapacity i).exponent = 10
+'JSP404.FourCenter.witness_weight_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.witness_attains_upper_capacity : ∑ i, 2 ^ (JSP404.FourCenter.witnessCapacity i).exponent ≤
+  2 ^ 3 + 2 ^ (3 - 2)
+'JSP404.FourCenter.witness_attains_upper_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FourCenter.witness_exceeds_nine : 9 < ∑ i, 2 ^ (JSP404.FourCenter.witnessCapacity i).exponent
+'JSP404.FourCenter.witness_exceeds_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+structure JSP404.FourCenter.DirectionModel (t : ℝ) : Type
+number of parameters: 1
+fields:
+  JSP404.FourCenter.DirectionModel.d01 : ℝ
+  JSP404.FourCenter.DirectionModel.d02 : ℝ
+  JSP404.FourCenter.DirectionModel.d03 : ℝ
+  JSP404.FourCenter.DirectionModel.d12 : ℝ
+  JSP404.FourCenter.DirectionModel.d13 : ℝ
+  JSP404.FourCenter.DirectionModel.d23 : ℝ
+  JSP404.FourCenter.DirectionModel.r01 : 0 ≤ self.d01 ∧ self.d01 < t
+  JSP404.FourCenter.DirectionModel.r02 : 0 ≤ self.d02 ∧ self.d02 < t
+  JSP404.FourCenter.DirectionModel.r03 : 0 ≤ self.d03 ∧ self.d03 < t
+  JSP404.FourCenter.DirectionModel.r12 : 0 ≤ self.d12 ∧ self.d12 < t
+  JSP404.FourCenter.DirectionModel.r13 : 0 ≤ self.d13 ∧ self.d13 < t
+  JSP404.FourCenter.DirectionModel.r23 : 0 ≤ self.d23 ∧ self.d23 < t
+  JSP404.FourCenter.DirectionModel.c012 : JSP404.FourCenter.TripleCap self.d01 self.d02 self.d12 t
+  JSP404.FourCenter.DirectionModel.c013 : JSP404.FourCenter.TripleCap self.d01 self.d03 self.d13 t
+  JSP404.FourCenter.DirectionModel.c023 : JSP404.FourCenter.TripleCap self.d02 self.d03 self.d23 t
+  JSP404.FourCenter.DirectionModel.c123 : JSP404.FourCenter.TripleCap self.d12 self.d13 self.d23 t
+constructor:
+  JSP404.FourCenter.DirectionModel.mk {t : ℝ} (d01 d02 d03 d12 d13 d23 : ℝ) (r01 : 0 ≤ d01 ∧ d01 < t)
+    (r02 : 0 ≤ d02 ∧ d02 < t) (r03 : 0 ≤ d03 ∧ d03 < t) (r12 : 0 ≤ d12 ∧ d12 < t) (r13 : 0 ≤ d13 ∧ d13 < t)
+    (r23 : 0 ≤ d23 ∧ d23 < t) (c012 : JSP404.FourCenter.TripleCap d01 d02 d12 t)
+    (c013 : JSP404.FourCenter.TripleCap d01 d03 d13 t) (c023 : JSP404.FourCenter.TripleCap d02 d03 d23 t)
+    (c123 : JSP404.FourCenter.TripleCap d12 d13 d23 t) : JSP404.FourCenter.DirectionModel t
+structure JSP404.FourCenter.CapacityData (g : ℝ × ℝ × ℝ) : Type
+number of parameters: 1
+fields:
+  JSP404.FourCenter.CapacityData.a : ℕ
+  JSP404.FourCenter.CapacityData.b : ℕ
+  JSP404.FourCenter.CapacityData.c : ℕ
+  JSP404.FourCenter.CapacityData.a_lo : ↑self.a ≤ g.1
+  JSP404.FourCenter.CapacityData.b_lo : ↑self.b ≤ g.2.1
+  JSP404.FourCenter.CapacityData.c_lo : ↑self.c ≤ g.2.2
+  JSP404.FourCenter.CapacityData.a_hi : g.1 < ↑self.a + 1
+  JSP404.FourCenter.CapacityData.b_hi : g.2.1 < ↑self.b + 1
+  JSP404.FourCenter.CapacityData.c_hi : g.2.2 < ↑self.c + 1
+constructor:
+  JSP404.FourCenter.CapacityData.mk {g : ℝ × ℝ × ℝ} (a b c : ℕ) (a_lo : ↑a ≤ g.1) (b_lo : ↑b ≤ g.2.1)
+    (c_lo : ↑c ≤ g.2.2) (a_hi : g.1 < ↑a + 1) (b_hi : g.2.1 < ↑b + 1) (c_hi : g.2.2 < ↑c + 1) :
+    JSP404.FourCenter.CapacityData g
+def JSP404.FourCenter.CapacityData.exponent : {g : ℝ × ℝ × ℝ} → JSP404.FourCenter.CapacityData g → ℕ :=
+fun {g} C => C.a - 1 + (C.b - 1) + (C.c - 1)

@@ -23,14 +23,11 @@ jobs:
           use-mathlib-cache: "true"
           use-github-cache: "false"
           leanchecker: "true"
-          leanchecker-args: "Problem Reduction Regression FourCenterDefs FourCenterExclusions FourCenterCapacity FourCenterWeights FourCenterBound FourCenterWitness CompletionContract"
+          leanchecker-args: "Problem Reduction Regression FourCenterDefs FourCenterExclusions FourCenterCapacity FourCenterWeights FourCenterBound FourCenterWitness CompletionContract GlobalDirections FiniteReductionCounterexample"
       - name: Audit declared partial results
-        working-directory: project
-        run: |
-          lake env lean Audit.lean
-          lake env lean FourCenterAudit.lean
-          lake env lean CompletionContract.lean
+        run: python3 verification/check_axioms.py
       - name: Check exact finite diagnostics
         run: |
           python3 experiments/check_four_centers.py
           python3 experiments/check_triangle_domination_countermodel.py
+          python3 experiments/check_capacity_reduction.py

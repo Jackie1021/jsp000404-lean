@@ -1,0 +1,20 @@
+{
+  "project/FourCenterExclusions.lean": "d6cb7fc9fe662e012ac8f9baa71cf704b7514542fe8d9dca14ea538c2a8bd77d",
+  "project/Problem.lean": "a62ba6c89a60fbd15434a280db44e19851b6ce0d3b6fbbef5063fccb53f317e7",
+  "project/FourCenterWitness.lean": "4d99dadb542cf3e2466574bec50992d71f29a0b798f9875340306e869bf76b61",
+  "project/lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+  "project/FourCenterWeights.lean": "57b5ae8560fa5a1a340e402768af46ca9b9d103ec36e067148aad8b6dd1c6de1",
+  "project/lake-manifest.json": "92ed9fc6b1ee36eec7b60ac1b5efc9ebf631dee665b5e339ff024c98fd2cdb62",
+  "project/Audit.lean": "2385f7a41967befb3ceb7cdf3f8d5ae0fb686fb42133a5dcb84202667ec76555",
+  "project/Regression.lean": "f6490df786a15204dc686fde0fff8e8a883e5aa4f2ca296e16db4040c7b6f9d2",
+  "project/FourCenterDefs.lean": "25dd0ad21ece2acba20d188fec517ddff6ac142c0b6969874efa03e58279a40c",
+  "project/lakefile.toml": "6d85ed51b10a816073e3be34f286d065c129bb8576f37423fd5323ff3b0c81ac",
+  "project/FourCenterAudit.lean": "0c306d90c6ad562dbe0425ee3f3f5d2087be63db84411164bd389ceb4cff8c42",
+  "project/GeneralAudit.lean": "2014c0419adb1d1e970a59fe35859c2b82135c292e0216a674e188cfe773896f",
+  "project/Reduction.lean": "e8238c98d4916a32f88878b5deef53bc74f9d20e7abcf62b5196f0abcbc58d8c",
+  "project/CompletionContract.lean": "070bf8d432c754f433ddd1bd673937a44e1afd0cf53bb88b0926460bbb492dbe",
+  "project/GlobalDirections.lean": "7ef6e49bbea3b96372d2ebb8cf94de70788e5b636c8777fd341c837fee60326e",
+  "project/FourCenterBound.lean": "161791c6bd3a1815111c511e32210365d686f7c3c53aa14d2b5029d498f2eda3",
+  "project/FourCenterCapacity.lean": "ca3c93b399e5c662119db4087072d7aabae69e382010ad998d20351d00fefddf",
+  "project/FiniteReductionCounterexample.lean": "df3422f150cbf2b0d3bcdd37541d87d142db6a8a66f21559f3a7184f6d4fe044"
+}

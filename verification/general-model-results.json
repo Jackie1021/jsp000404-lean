@@ -1,0 +1,19 @@
+{
+  "scope": "arbitrary-center direction model, classical band bound, and finite deletion obstruction",
+  "full_original_problem_solved": false,
+  "award_submission_ready": false,
+  "declared_axioms_checked": 71,
+  "standard_axioms_only": true,
+  "new_modules": [
+    "GlobalDirections",
+    "FiniteReductionCounterexample"
+  ],
+  "new_modules_build_exit_code": 0,
+  "new_modules_kernel_replay_exit_code": 0,
+  "fresh_transitive_kernel_replay": false,
+  "independent_human_review": false,
+  "lean_counterexample_capacity": 8,
+  "lean_all_deletion_capacities": 7,
+  "counterexample_to_final_classification": false,
+  "euclidean_realizability_asserted": false
+}

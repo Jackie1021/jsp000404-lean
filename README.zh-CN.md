@@ -9,6 +9,11 @@
 一个容量为 10 的模型实例，以及原题完整结论的六项等价完成条件。
 模型定理尚未与任意点数的真实平面配置完整连接。
 
+2026-10-04 新增：任意中心数的方向模型、经典二进制分带计数上界，
+以及一个通过 Lean 检查的五中心反例：总容量为 8，删去任意中心后均为 7。
+它排除了“删点且保住容量”的归纳捷径，不是原题结论的反例。
+详见 [本轮研究结果](GENERAL_MODEL_PROGRESS.md)。
+
 当前核心目标是证明两组对所有 m≥2 成立的下界：
 
 1. 任意 2^m+1 个互异平面点，都有角≥π(1−2/(2m+1))。
@@ -26,6 +31,7 @@ lake build
 lake env lean Audit.lean
 lake env lean FourCenterAudit.lean
 lake env lean CompletionContract.lean
+lake env lean GeneralAudit.lean
 ```
 
 实验使用 Z3 时，Z3 仅用于探索；SAT/UNSAT 输出不能替代 Lean 证明。

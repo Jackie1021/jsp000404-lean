@@ -1,0 +1,18 @@
+JSP404.FullClassification : Prop
+JSP404.ThresholdLowerBounds : Prop
+@JSP404.exactValue_isLUB : ∀ {n : ℕ} {a : ℝ}, JSP404.ExactValue n a → IsLUB {b | JSP404.Unavoidable n b} a
+@JSP404.unavoidable_mono : ∀ {m n : ℕ} {a : ℝ}, m ≤ n → JSP404.Unavoidable m a → JSP404.Unavoidable n a
+@JSP404.approximableCap_mono : ∀ {m n : ℕ} {a : ℝ}, m ≤ n → JSP404.ApproximableCap n a → JSP404.ApproximableCap m a
+JSP404.classification_of_thresholds : JSP404.ExactValue 3 (Real.pi / 3) →
+  JSP404.ExactValue 4 (Real.pi / 2) →
+    JSP404.ThresholdLowerBounds →
+      (∀ (m : ℕ), 2 ≤ m → JSP404.ApproximableCap (JSP404.transition m) (JSP404.firstValue m)) →
+        (∀ (m : ℕ), 2 ≤ m → JSP404.ApproximableCap (2 ^ (m + 1)) (JSP404.secondValue m)) → JSP404.FullClassification
+'JSP404.exactValue_isLUB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP404.unavoidable_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP404.approximableCap_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP404.classification_of_thresholds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP404.Regression.points_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP404.Regression.all_integer_certificates' depends on axioms: [propext]
+'JSP404.Regression.all_generalized_certificates' depends on axioms: [propext]
+'JSP404.Regression.generalized_nonzero' does not depend on any axioms

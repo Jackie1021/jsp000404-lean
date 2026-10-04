@@ -1,0 +1,46 @@
+[
+  {
+    "source": "capacity-subset-5-3-upper-4.json",
+    "full_capacity": 8,
+    "profile": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "subset_capacities": {
+      "0,1,2,3": 7,
+      "0,1,2,4": 7,
+      "0,1,3,4": 7,
+      "0,2,3,4": 7,
+      "1,2,3,4": 7
+    },
+    "exact_checks_passed": true,
+    "is_lean_proof": false,
+    "euclidean_realizability_verified": false,
+    "contradicts_final_capacity_bound": false
+  },
+  {
+    "source": "capacity-subset-5-4-upper-4.json",
+    "full_capacity": 17,
+    "profile": [
+      3,
+      0,
+      1,
+      1,
+      2
+    ],
+    "subset_capacities": {
+      "0,1,2,3": 15,
+      "0,1,2,4": 16,
+      "0,1,3,4": 16,
+      "0,2,3,4": 16,
+      "1,2,3,4": 15
+    },
+    "exact_checks_passed": true,
+    "is_lean_proof": false,
+    "euclidean_realizability_verified": false,
+    "contradicts_final_capacity_bound": false
+  }
+]

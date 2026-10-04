@@ -1,0 +1,13 @@
+@JSP404.GlobalDirections.cardinality_bound : ∀ {s : ℕ} {t : ℝ} (M : JSP404.GlobalDirections.Model s t) (k : ℕ),
+  t ≤ ↑k → s ≤ 2 ^ k
+'JSP404.GlobalDirections.Model.middle_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP404.GlobalDirections.cardinality_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.FiniteReductionCounterexample.witnessModel : JSP404.GlobalDirections.Model 5 (7 / 2)
+'JSP404.FiniteReductionCounterexample.witnessModel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP404.FiniteReductionCounterexample.scaled_gap_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP404.FiniteReductionCounterexample.vertices_nodup' depends on axioms: [propext]
+'JSP404.FiniteReductionCounterexample.full_capacity_eight' depends on axioms: [propext]
+'JSP404.FiniteReductionCounterexample.every_deletion_capacity_seven' depends on axioms: [propext]
+'JSP404.FiniteReductionCounterexample.no_capacity_preserving_deletion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

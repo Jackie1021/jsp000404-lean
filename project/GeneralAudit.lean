@@ -1,0 +1,13 @@
+import GlobalDirections
+import FiniteReductionCounterexample
+
+#check @JSP404.GlobalDirections.cardinality_bound
+#print axioms JSP404.GlobalDirections.Model.middle_separation
+#print axioms JSP404.GlobalDirections.cardinality_bound
+#check JSP404.FiniteReductionCounterexample.witnessModel
+#print axioms JSP404.FiniteReductionCounterexample.witnessModel
+#print axioms JSP404.FiniteReductionCounterexample.scaled_gap_floor
+#print axioms JSP404.FiniteReductionCounterexample.vertices_nodup
+#print axioms JSP404.FiniteReductionCounterexample.full_capacity_eight
+#print axioms JSP404.FiniteReductionCounterexample.every_deletion_capacity_seven
+#print axioms JSP404.FiniteReductionCounterexample.no_capacity_preserving_deletion

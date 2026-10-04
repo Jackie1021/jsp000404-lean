@@ -6,7 +6,13 @@ independent verification, or award entitlement is claimed.
 
 **Public research repository:** maintained by [Jackie1021](https://github.com/Jackie1021) with OpenAI Codex assistance. Public commits record research progress, not a completed-proof priority claim.
 
-**Latest checkpoint:** the four-center direction-model capacity inequalities,
+**2026-10-04 update:** an arbitrary-center direction model and its classical
+binary-band cardinality bound are proved in Lean. A five-center model is also
+proved to have capacity 8 while every four-center deletion has capacity 7,
+blocking capacity-preserving deletion as a general proof route. See
+[the exact scope and remaining gap](GENERAL_MODEL_PROGRESS.md).
+
+**Earlier checkpoint:** the four-center direction-model capacity inequalities,
 for every integer n >= 3, are now proved in Lean. See
 `FOUR_CENTER_RESULT.md` and `VERIFICATION_FOUR_CENTERS.md`. This does not cover
 an arbitrary number of centers or supply the full Euclidean correspondence.
@@ -94,12 +100,15 @@ lake build
 lake env lean Audit.lean
 lake env lean FourCenterAudit.lean
 lake env lean CompletionContract.lean
+lake env lean GeneralAudit.lean
 ```
 
 From this directory:
 
 ```sh
 python3 experiments/check_four_centers.py
+python3 experiments/check_capacity_reduction.py
+python3 verification/check_axioms.py
 ```
 
 See `VERIFICATION_FOUR_CENTERS.md` for the current checks and their limitations.

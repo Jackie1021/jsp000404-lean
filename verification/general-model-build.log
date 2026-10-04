@@ -1,0 +1,13 @@
+ℹ [3007/3011] Replayed GlobalDirections
+info: GlobalDirections.lean:66:0: 'JSP404.GlobalDirections.Model.middle_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GlobalDirections.lean:67:0: 'JSP404.GlobalDirections.cardinality_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3010/3011] Built FiniteReductionCounterexample (7.7s)
+info: FiniteReductionCounterexample.lean:65:0: 'JSP404.FiniteReductionCounterexample.witnessModel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteReductionCounterexample.lean:66:0: 'JSP404.FiniteReductionCounterexample.scaled_gap_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteReductionCounterexample.lean:67:0: 'JSP404.FiniteReductionCounterexample.vertices_nodup' depends on axioms: [propext]
+info: FiniteReductionCounterexample.lean:68:0: 'JSP404.FiniteReductionCounterexample.full_capacity_eight' depends on axioms: [propext]
+info: FiniteReductionCounterexample.lean:69:0: 'JSP404.FiniteReductionCounterexample.every_deletion_capacity_seven' depends on axioms: [propext]
+info: FiniteReductionCounterexample.lean:70:0: 'JSP404.FiniteReductionCounterexample.no_capacity_preserving_deletion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3011 jobs).
