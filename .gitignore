@@ -1,5 +1,5 @@
-.lake/
-.deps/
+.lake
+.deps
 .venv/
 __pycache__/
 *.pyc
@@ -9,4 +9,3 @@ __pycache__/
 .DS_Store
 *.pdf
 *.zip
-
