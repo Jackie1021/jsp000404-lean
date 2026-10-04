@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "centers": 5,
+    "n": 4,
+    "subset_size": 4,
+    "mode": "global",
+    "half": "upper",
+    "timeout_ms": 45000
+  },
+  "status": "unsat",
+  "seconds": 3.911762250121683,
+  "solver": "5.1.0",
+  "is_lean_proof": false,
+  "euclidean_realizability_verified": false,
+  "full_original_problem_solved": false,
+  "conjectured_global_bound": 20
+}

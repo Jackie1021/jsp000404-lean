@@ -1,0 +1,27 @@
+{
+  "status": "exact_rational_checks_passed",
+  "full_capacity": 18,
+  "full_profile": [
+    2,
+    2,
+    1,
+    2,
+    2
+  ],
+  "triple_capacities": {
+    "(0, 1, 2)": 14,
+    "(0, 1, 3)": 16,
+    "(0, 1, 4)": 12,
+    "(0, 2, 3)": 16,
+    "(0, 2, 4)": 12,
+    "(0, 3, 4)": 16,
+    "(1, 2, 3)": 16,
+    "(1, 2, 4)": 16,
+    "(1, 3, 4)": 16,
+    "(2, 3, 4)": 16
+  },
+  "counterexample_to_three_center_domination_in_relaxation": true,
+  "counterexample_to_final_classification": false,
+  "euclidean_realizability_verified": false,
+  "is_lean_proof": false
+}

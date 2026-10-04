@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "centers": 5,
+    "n": 4,
+    "subset_size": 4,
+    "mode": "subset",
+    "half": "upper",
+    "timeout_ms": 45000
+  },
+  "status": "sat",
+  "seconds": 2.2321775418240577,
+  "solver": "5.1.0",
+  "is_lean_proof": false,
+  "euclidean_realizability_verified": false,
+  "full_original_problem_solved": false,
+  "conjectured_global_bound": 20,
+  "t": "67/14",
+  "directions": {
+    "0,1": "1/7",
+    "0,2": "3/14",
+    "0,3": "6/7",
+    "0,4": "13/14",
+    "1,2": "8/7",
+    "1,3": "43/14",
+    "1,4": "4",
+    "2,3": "22/7",
+    "2,4": "57/14",
+    "3,4": "33/7"
+  },
+  "full_capacity": 17,
+  "subset_capacities": {
+    "0,1,2,3": 15,
+    "0,1,2,4": 16,
+    "0,1,3,4": 16,
+    "0,2,3,4": 16,
+    "1,2,3,4": 15
+  }
+}

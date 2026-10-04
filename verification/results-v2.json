@@ -1,0 +1,27 @@
+{
+  "timestamp_utc": "2026-09-21T13:59:52.668464+00:00",
+  "scope": "four-center direction model; every integer n >= 3",
+  "root_theorems": [
+    "JSP404.FourCenter.capacity_bound_lower",
+    "JSP404.FourCenter.capacity_bound_upper"
+  ],
+  "full_original_problem_solved": false,
+  "award_submission_ready": false,
+  "new_public_theorems_audited": 54,
+  "build_exit_code": 0,
+  "audit_exit_code": 0,
+  "kernel_replay_exit_code": 0,
+  "kernel_replay_modules": [
+    "FourCenterDefs",
+    "FourCenterExclusions",
+    "FourCenterCapacity",
+    "FourCenterWeights",
+    "FourCenterBound",
+    "FourCenterWitness"
+  ],
+  "fresh_transitive_kernel_replay": false,
+  "external_independent_checker": false,
+  "human_review": false,
+  "only_standard_axioms": true,
+  "z3_used_as_trusted_axiom": false
+}

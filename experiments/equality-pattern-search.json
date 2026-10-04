@@ -1,0 +1,44 @@
+[
+  {
+    "branch": "lower",
+    "question": "all four exponents at least n-2",
+    "status": "sat",
+    "seconds": 0.007976084016263485,
+    "is_lean_proof": false,
+    "model": {
+      "n": "4",
+      "t": "13/3",
+      "d_01": "25/6",
+      "d_02": "2",
+      "d_03": "13/6",
+      "d_12": "0",
+      "d_13": "2",
+      "d_23": "25/6",
+      "k_0": "2",
+      "k_1": "2",
+      "k_2": "2",
+      "k_3": "2"
+    }
+  },
+  {
+    "branch": "upper",
+    "question": "all four exponents at least n-2",
+    "status": "sat",
+    "seconds": 0.006681583006866276,
+    "is_lean_proof": false,
+    "model": {
+      "n": "4",
+      "t": "39/8",
+      "d_01": "17/4",
+      "d_02": "2",
+      "d_03": "17/8",
+      "d_12": "0",
+      "d_13": "5/4",
+      "d_23": "33/8",
+      "k_0": "2",
+      "k_1": "2",
+      "k_2": "2",
+      "k_3": "2"
+    }
+  }
+]

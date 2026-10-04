@@ -1,0 +1,36 @@
+name: Partial proof verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      LEAN_NUM_THREADS: 2
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865
+        with:
+          lake-package-directory: project
+          auto-config: "false"
+          build: "true"
+          test: "false"
+          lint: "false"
+          use-mathlib-cache: "true"
+          use-github-cache: "false"
+          leanchecker: "true"
+          leanchecker-args: "Problem Reduction Regression FourCenterDefs FourCenterExclusions FourCenterCapacity FourCenterWeights FourCenterBound FourCenterWitness CompletionContract"
+      - name: Audit declared partial results
+        working-directory: project
+        run: |
+          lake env lean Audit.lean
+          lake env lean FourCenterAudit.lean
+          lake env lean CompletionContract.lean
+      - name: Check exact finite diagnostics
+        run: |
+          python3 experiments/check_four_centers.py
+          python3 experiments/check_triangle_domination_countermodel.py

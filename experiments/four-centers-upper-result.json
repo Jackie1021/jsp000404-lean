@@ -1,0 +1,9 @@
+{
+  "branch": "upper",
+  "fixed_n": null,
+  "status": "unsat",
+  "seconds": 0.10624499997356907,
+  "solver": "5.1.0",
+  "is_lean_proof": false,
+  "is_full_problem_solution": false
+}

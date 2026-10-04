@@ -1,0 +1,92 @@
+ℹ [3083/3100] Replayed Reduction
+info: Reduction.lean:67:0: 'JSP404.unavoidable_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Reduction.lean:68:0: 'JSP404.approximableCap_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Reduction.lean:69:0: 'JSP404.exactValue_isLUB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Reduction.lean:70:0: 'JSP404.classification_of_thresholds' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3085/3100] Replayed Regression
+info: Regression.lean:61:0: 'JSP404.Regression.points_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Regression.lean:62:0: 'JSP404.Regression.all_integer_certificates' depends on axioms: [propext]
+info: Regression.lean:63:0: 'JSP404.Regression.all_generalized_certificates' depends on axioms: [propext]
+info: Regression.lean:64:0: 'JSP404.Regression.generalized_nonzero' does not depend on any axioms
+ℹ [3089/3100] Replayed FourCenterExclusions
+info: FourCenterExclusions.lean:149:0: 'JSP404.FourCenter.lower_no_two_high_01' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:289:0: 'JSP404.FourCenter.lower_no_two_high_02' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:429:0: 'JSP404.FourCenter.lower_no_two_high_03' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:557:0: 'JSP404.FourCenter.lower_no_two_high_12' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:685:0: 'JSP404.FourCenter.lower_no_two_high_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:813:0: 'JSP404.FourCenter.lower_no_two_high_23' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:1074:0: 'JSP404.FourCenter.lower_no_high_middle_middle_012' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:1335:0: 'JSP404.FourCenter.lower_no_high_middle_middle_013' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:1572:0: 'JSP404.FourCenter.lower_no_high_middle_middle_023' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:1785:0: 'JSP404.FourCenter.lower_no_high_middle_middle_102' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:1998:0: 'JSP404.FourCenter.lower_no_high_middle_middle_103' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:2163:0: 'JSP404.FourCenter.lower_no_high_middle_middle_123' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:2376:0: 'JSP404.FourCenter.lower_no_high_middle_middle_201' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:2589:0: 'JSP404.FourCenter.lower_no_high_middle_middle_203' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:2754:0: 'JSP404.FourCenter.lower_no_high_middle_middle_213' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:3015:0: 'JSP404.FourCenter.lower_no_high_middle_middle_301' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:3276:0: 'JSP404.FourCenter.lower_no_high_middle_middle_302' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:3513:0: 'JSP404.FourCenter.lower_no_high_middle_middle_312' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:3691:0: 'JSP404.FourCenter.upper_no_high_high_middle_012' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:3869:0: 'JSP404.FourCenter.upper_no_high_high_middle_013' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:4047:0: 'JSP404.FourCenter.upper_no_high_high_middle_021' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:4225:0: 'JSP404.FourCenter.upper_no_high_high_middle_023' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:4415:0: 'JSP404.FourCenter.upper_no_high_high_middle_031' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:4605:0: 'JSP404.FourCenter.upper_no_high_high_middle_032' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:4759:0: 'JSP404.FourCenter.upper_no_high_high_middle_120' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:4913:0: 'JSP404.FourCenter.upper_no_high_high_middle_123' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:5079:0: 'JSP404.FourCenter.upper_no_high_high_middle_130' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:5245:0: 'JSP404.FourCenter.upper_no_high_high_middle_132' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:5411:0: 'JSP404.FourCenter.upper_no_high_high_middle_230' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterExclusions.lean:5577:0: 'JSP404.FourCenter.upper_no_high_high_middle_231' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3093/3100] Replayed FourCenterWeights
+info: FourCenterWeights.lean:129:0: 'JSP404.FourCenter.four_weight_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterWeights.lean:130:0: 'JSP404.FourCenter.four_weight_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3095/3100] Replayed FourCenterBound
+info: FourCenterBound.lean:48:0: capacity_bound_lower : ∀ (n : ℕ),
+  3 ≤ n →
+    ∀ (t : ℝ),
+      ↑n ≤ t →
+        t < ↑n + 1 / 2 →
+          ∀ (M : DirectionModel t) (C : (i : Fin 4) → CapacityData (M.gaps i)), ∑ i, 2 ^ (C i).exponent ≤ 2 ^ n
+info: FourCenterBound.lean:49:0: capacity_bound_upper : ∀ (n : ℕ),
+  3 ≤ n →
+    ∀ (t : ℝ),
+      ↑n ≤ t →
+        t < ↑n + 1 →
+          ↑n + 1 / 2 ≤ t →
+            ∀ (M : DirectionModel t) (C : (i : Fin 4) → CapacityData (M.gaps i)),
+              ∑ i, 2 ^ (C i).exponent ≤ 2 ^ n + 2 ^ (n - 2)
+info: FourCenterBound.lean:50:0: 'JSP404.FourCenter.capacity_bound_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterBound.lean:51:0: 'JSP404.FourCenter.capacity_bound_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3097/3100] Replayed FourCenterWitness
+info: FourCenterWitness.lean:48:0: 'JSP404.FourCenter.witness_weight_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterWitness.lean:49:0: 'JSP404.FourCenter.witness_attains_upper_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourCenterWitness.lean:50:0: 'JSP404.FourCenter.witness_exceeds_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3099/3100] Built CompletionContract (15s)
+info: CompletionContract.lean:69:0: JSP404.CoverageAudit.fullClassification_iff_completeObligations : FullClassification ↔ CompleteObligations
+info: CompletionContract.lean:70:0: 'JSP404.CoverageAudit.fullClassification_iff_completeObligations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: CompletionContract.lean:71:0: JSP404.CoverageAudit.unavoidable_iff_no_strict_cap (n : ℕ) (a : ℝ) :
+  Unavoidable n a ↔
+    ∀ (p : Fin n → Plane),
+      Function.Injective p → ¬∀ (i j k : Fin n), i ≠ j → j ≠ k → i ≠ k → EuclideanGeometry.angle (p i) (p j) (p k) < a
+info: CompletionContract.lean:72:0: 'JSP404.CoverageAudit.unavoidable_iff_no_strict_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CompletionContract.lean:73:0: JSP404.classification_of_thresholds (h3 : ExactValue 3 (Real.pi / 3)) (h4 : ExactValue 4 (Real.pi / 2))
+  (hLower : ThresholdLowerBounds) (hUpperFirst : ∀ (m : ℕ), 2 ≤ m → ApproximableCap (transition m) (firstValue m))
+  (hUpperSecond : ∀ (m : ℕ), 2 ≤ m → ApproximableCap (2 ^ (m + 1)) (secondValue m)) : FullClassification
+info: CompletionContract.lean:74:0: JSP404.FourCenter.capacity_bound_lower (n : ℕ) (hn : 3 ≤ n) (t : ℝ) (ht : ↑n ≤ t) (htop : t < ↑n + 1 / 2)
+  (M : FourCenter.DirectionModel t) (C : (i : Fin 4) → FourCenter.CapacityData (M.gaps i)) :
+  ∑ i, 2 ^ (C i).exponent ≤ 2 ^ n
+info: CompletionContract.lean:75:0: JSP404.FourCenter.capacity_bound_upper (n : ℕ) (hn : 3 ≤ n) (t : ℝ) (ht : ↑n ≤ t) (htop : t < ↑n + 1)
+  (hhalf : ↑n + 1 / 2 ≤ t) (M : FourCenter.DirectionModel t) (C : (i : Fin 4) → FourCenter.CapacityData (M.gaps i)) :
+  ∑ i, 2 ^ (C i).exponent ≤ 2 ^ n + 2 ^ (n - 2)
+info: CompletionContract.lean:76:0: def JSP404.FullClassification : Prop :=
+ExactValue 3 (Real.pi / 3) ∧
+  ExactValue 4 (Real.pi / 2) ∧
+    (∀ (m : ℕ), 2 ≤ m → ∀ (n : ℕ), 2 ^ m < n → n ≤ transition m → ExactValue n (firstValue m)) ∧
+      ∀ (m : ℕ), 2 ≤ m → ∀ (n : ℕ), transition m < n → n ≤ 2 ^ (m + 1) → ExactValue n (secondValue m)
+info: CompletionContract.lean:77:0: def JSP404.CoverageAudit.CompleteObligations : Prop :=
+ExactValue 3 (Real.pi / 3) ∧ ExactValue 4 (Real.pi / 2) ∧ LowerFirst ∧ LowerSecond ∧ UpperFirst ∧ UpperSecond
+Build completed successfully (3100 jobs).

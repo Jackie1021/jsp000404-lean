@@ -1,0 +1,25 @@
+JSP404.CoverageAudit.fullClassification_iff_completeObligations : FullClassification ↔ CompleteObligations
+'JSP404.CoverageAudit.fullClassification_iff_completeObligations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+JSP404.CoverageAudit.unavoidable_iff_no_strict_cap (n : ℕ) (a : ℝ) :
+  Unavoidable n a ↔
+    ∀ (p : Fin n → Plane),
+      Function.Injective p → ¬∀ (i j k : Fin n), i ≠ j → j ≠ k → i ≠ k → EuclideanGeometry.angle (p i) (p j) (p k) < a
+'JSP404.CoverageAudit.unavoidable_iff_no_strict_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP404.classification_of_thresholds (h3 : ExactValue 3 (Real.pi / 3)) (h4 : ExactValue 4 (Real.pi / 2))
+  (hLower : ThresholdLowerBounds) (hUpperFirst : ∀ (m : ℕ), 2 ≤ m → ApproximableCap (transition m) (firstValue m))
+  (hUpperSecond : ∀ (m : ℕ), 2 ≤ m → ApproximableCap (2 ^ (m + 1)) (secondValue m)) : FullClassification
+JSP404.FourCenter.capacity_bound_lower (n : ℕ) (hn : 3 ≤ n) (t : ℝ) (ht : ↑n ≤ t) (htop : t < ↑n + 1 / 2)
+  (M : FourCenter.DirectionModel t) (C : (i : Fin 4) → FourCenter.CapacityData (M.gaps i)) :
+  ∑ i, 2 ^ (C i).exponent ≤ 2 ^ n
+JSP404.FourCenter.capacity_bound_upper (n : ℕ) (hn : 3 ≤ n) (t : ℝ) (ht : ↑n ≤ t) (htop : t < ↑n + 1)
+  (hhalf : ↑n + 1 / 2 ≤ t) (M : FourCenter.DirectionModel t) (C : (i : Fin 4) → FourCenter.CapacityData (M.gaps i)) :
+  ∑ i, 2 ^ (C i).exponent ≤ 2 ^ n + 2 ^ (n - 2)
+def JSP404.FullClassification : Prop :=
+ExactValue 3 (Real.pi / 3) ∧
+  ExactValue 4 (Real.pi / 2) ∧
+    (∀ (m : ℕ), 2 ≤ m → ∀ (n : ℕ), 2 ^ m < n → n ≤ transition m → ExactValue n (firstValue m)) ∧
+      ∀ (m : ℕ), 2 ≤ m → ∀ (n : ℕ), transition m < n → n ≤ 2 ^ (m + 1) → ExactValue n (secondValue m)
+def JSP404.CoverageAudit.CompleteObligations : Prop :=
+ExactValue 3 (Real.pi / 3) ∧ ExactValue 4 (Real.pi / 2) ∧ LowerFirst ∧ LowerSecond ∧ UpperFirst ∧ UpperSecond

@@ -1,0 +1,12 @@
+.lake/
+.deps/
+.venv/
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+*.olean.*
+.DS_Store
+*.pdf
+*.zip
+
